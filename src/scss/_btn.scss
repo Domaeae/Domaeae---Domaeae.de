@@ -299,6 +299,14 @@ button.btn {
   }
 }
 
+.btn-md-active {
+  text-decoration: underline;
+
+  &:active {
+    text-transform: uppercase;
+  }
+}
+
 .btn-md::-moz-focus-inner {
   border: none !important;
 }

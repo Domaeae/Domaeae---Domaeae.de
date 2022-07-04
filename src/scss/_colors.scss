@@ -11,7 +11,7 @@ $colors: (
   colord3: #f9a718,
   colord4: #93bf5a,
   colord5: #37aa78,
-  colord6: #3b5796
+  colord6: #3b5796,
 );
 
 @function colors($color-name) {
@@ -35,7 +35,7 @@ $mdcolor: (
   color6: #212121,
   color7: #3f51b5,
   primary: #e91e63,
-  secondary: #ffff
+  secondary: #ffff,
 );
 
 @function mdcolor($mdpalette) {
@@ -80,13 +80,10 @@ $color-palettes: (
   @return map-get($color-palettes, $col-nam);
 }
 
-
 // $gardient-blue: linear-gradient(50deg,
 //     rgba(60, 84, 180, 1) 0%,
 //     rgba(131, 78, 139, 1) 35%,
 //     rgba(252, 68, 68, 1) 100%);
-
-
 
 $colors2: (
   color-primary: #3f51b5,
