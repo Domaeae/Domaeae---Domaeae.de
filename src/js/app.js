@@ -24,9 +24,17 @@ $(function () {
     app_body.addClass('dark-body');
 
 
+    // Dark-Buttons verdunkeln
+    $('.btn-md-outline-dark').addClass('btn-md-primary');
+    $('.btn-md-outline-dark').removeClass('btn-md-outline-dark');
+
+    $('.btn-back').addClass('btn-md-pink').removeClass('btn-md-outline-dark');
+    // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
+
+
 
   } else {
     console.log('Light mode is enabled');
-  }
-  
+  };
+
 });
