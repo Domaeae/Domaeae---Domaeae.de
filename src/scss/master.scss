@@ -1,0 +1,52 @@
+// Domaeae.de - by Dominik Girrbach
+// ####
+// ⚡ | Variables >>
+@import '_colors';
+@import 'fonts';
+// 🪐 | Functions
+// $fontf: "Open Sans", sans-serif;
+// $fonthead: "Raleway", sans-serif;
+// ---|
+@import '_layout';
+@import '_animations';
+
+// ⚡ | >Start w/ CSS >>
+html {
+  box-sizing: border-box;
+
+  // width: 100vw;
+}
+
+// App-Body > Work in Progress Label
+.app__content-wp {
+  font-size: 1.3vw;
+  margin: 10px 0 40px 0;
+  padding: 0 15px;
+
+  & a.btn-mailto {
+    color: red;
+  }
+}
+
+.app-body .app-body--text {
+  font-family: $fonthead;
+  // font-family: $fontf;
+}
+
+// =================
+// @import "form";
+// @import "layout/_form";
+// @import "buttons";
+@import '_btn';
+@import '_reslayout';
+// _________________
+
+// body {
+//   overflow: hidden !important;
+//   header {
+//     display: none !important;
+//   }
+//   nav {
+//     display: block !important;
+//   }
+// }
