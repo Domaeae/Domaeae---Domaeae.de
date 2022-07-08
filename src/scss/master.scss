@@ -2,7 +2,7 @@
 // ####
 // ⚡ | Variables >>
 @import '_colors';
-@import 'fonts';
+@import '_fonts';
 // 🪐 | Functions
 // $fontf: "Open Sans", sans-serif;
 // $fonthead: "Raleway", sans-serif;
@@ -13,6 +13,13 @@
 // ⚡ | >Start w/ CSS >>
 html {
   box-sizing: border-box;
+
+  .text-test {
+    // font-family: $fonthead;
+    // font-family: $fontubuntu;
+    font-family: $fontubuntu !important;
+    font-size: 1.5rem;
+  }
 
   // width: 100vw;
 }
