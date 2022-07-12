@@ -9,7 +9,7 @@
 /* @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 $btn-font-family: 'Roboto'; */
 $btn-font-family: $fonthead;
-$btn-font-weight: 800;
+$btn-font-weight: 700;
 $btn-font-size: 1rem;
 $btn-line-height: 1.5;
 $btn-padding: 0.375rem 0.75rem;
@@ -450,6 +450,7 @@ button.btn {
 
   &:hover {
     background-color: colors3(color-dark);
+    font-weight: 500;
     color: white;
     box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.2),
       0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
