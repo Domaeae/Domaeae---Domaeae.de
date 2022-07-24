@@ -95,6 +95,7 @@ nav.app-navbar {
   }
 
   .app-body--heading {
+    font-size: 25px;
     font-family: $fontubuntu !important;
     // font-weight: 500 !important;
   }
@@ -126,6 +127,8 @@ nav.app-navbar {
 
 header .app-header--branding img {
   animation: fadein_animation 1s ease 0s 1;
+  height: 64px;
+  width: auto;
 }
 
 // -> Modal - Classes|
