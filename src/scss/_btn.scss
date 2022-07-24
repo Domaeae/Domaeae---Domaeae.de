@@ -431,7 +431,8 @@ button.btn {
   transition: all 0.85ms;
 
   &:hover {
-    background-color: lighten(colors3(color-dark), 20%) !important;
+    // background-color: lighten(colors3(color-dark), 20%) !important;
+    background-color: $grey-700;
     border: 0.06rem solid lighten(colors3(color-dark), 20%) !important;
     // border: 0.6rem solid lighten(colors3(color-dark), 15%);
     box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.2),
@@ -454,8 +455,9 @@ button.btn {
   transition: $btn-transition !important;
 
   &:hover {
-    // background-color: colors3(color-dark);
-    background-color: $grey-800;
+    background-color: colors3(color-dark);
+    // background-color: $grey-400;
+    // background-color: $blue-grey-400;
     font-weight: 500;
     color: white;
     box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.2),
