@@ -1,15 +1,48 @@
-$(function () {
-
-
-
-  // Variablen
-
+$(document).ready(function () {
   const app = $('.app'); // Ganze App (HTML fällt noch)
   const app_body = $('.app-body'); //innere teil
   const isDarkMode =
     window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+  const tr1 = $('.tr-1');
+  const tr2 = $('.tr-2');
+  const tr3 = $('.tr-3');
+  // ============
+  const btn1 = $(".gl1");
+  const btn2 = $(".gl2");
+  const btn3 = $(".gl3");
+  const btnall = $(".glall");
+
+  btn1.click(function (e) {
+    tr1.show();
+    tr2.hide();
+    tr3.hide();
+    e.preventDefault();
+
+  });
+
+  btn2.click(function (e) {
+    tr2.show();
+    tr1.hide();
+    tr3.hide();
+    e.preventDefault();
+
+  });
+
+  btn3.click(function (e) {
+    tr3.show();
+    tr1.hide();
+    tr2.hide();
+    e.preventDefault();
+
+  });
+
+  btnall.click(function (e) {
+    tr1.show();
+    tr2.show();
+    tr3.show();
+  });
 
 
   // IF-Schleifen
@@ -20,7 +53,6 @@ $(function () {
   } else {
     console.log('Light mode is enabled');
   };
-
 
 
   // Funktionen
@@ -34,13 +66,4 @@ $(function () {
     $('.btn-back').addClass('btn-md-pink').removeClass('btn-md-outline-dark');
     // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
   }
-
 });
-
-// function isDark(color) {
-//   var match = /rgb\((\d+).*?(\d+).*?(\d+)\)/.exec(color);
-//   return parseFloat(match[1])
-//     + parseFloat(match[2])
-//     + parseFloat(match[3])
-//     < 3 * 256 / 2; // r+g+b should be less than half of max (3 * 256)
-// }
