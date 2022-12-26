@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.https://AnonSim.de</loc>
+		<loc>https://www.domaeae.de</loc>
+		<priority>1.00</priority>
+		<lastmod>2022-12-26</lastmod>
+	</url>
+	<url>
+		<loc>https://www.domaeae.de/site.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2022-06-18</lastmod>
+		<lastmod>2022-07-09</lastmod>
 	</url>
 	<url>
-		<loc>https://www.https://AnonSim.de/404.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-06-17</lastmod>
+		<loc>https://www.domaeae.de/projects.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-12-26</lastmod>
 	</url>
 	<url>
-		<loc>https://www.https://AnonSim.de/kontakt.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-06-17</lastmod>
+		<loc>https://www.domaeae.de/offline.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-07-11</lastmod>
 	</url>
 	<url>
-		<loc>https://www.https://AnonSim.de/offline.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-06-14</lastmod>
+		<loc>https://www.domaeae.de/kontakt.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-12-26</lastmod>
 	</url>
 	<url>
-		<loc>https://www.https://AnonSim.de/projects.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-06-18</lastmod>
-	</url>
-	<url>
-		<loc>https://www.https://AnonSim.de/site.html</loc>
-		<priority>0.25</priority>
-		<lastmod>2022-06-12</lastmod>
+		<loc>https://www.domaeae.de/404.html</loc>
+		<priority>0.50</priority>
+		<lastmod>2022-12-26</lastmod>
 	</url>
 </urlset>
