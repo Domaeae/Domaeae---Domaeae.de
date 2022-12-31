@@ -46,6 +46,16 @@ html {
   // font-family: $fontf;
 }
 
+// Project Table
+.table {
+  width: 100%;
+  tr td a {
+    text-decoration: none;
+    color: #212121;
+    display: inline-block;
+  }
+}
+
 // =================
 // @import "form";
 // @import "layout/_form";

@@ -367,6 +367,15 @@ button.btn {
   }
 }
 
+.btn-md-primary-active {
+  background-color: #ff304f;
+
+  &:hover {
+    background-color: #ff3352;
+    color: #212121;
+  }
+}
+
 // // -->--> OUTLINE-PRIMARY-BUTTOM -->-->
 
 .btn-md-outline-primary {

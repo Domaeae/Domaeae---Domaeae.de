@@ -86,8 +86,10 @@ nav.app-navbar {
   .h2-heading {
     // font-family: $fonthead;
     font-family: $ffontubuntu;
-    font-weight: 700;
+    font-size: 22px !important;
+    font-weight: 700 !important;
     margin: 27px 0 0 20px;
+    font-weight: bold !important;
   }
 
   // WARNING: Don't forgot |2| Delte this:

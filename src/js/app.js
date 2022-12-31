@@ -13,22 +13,51 @@ $(document).ready(function () {
   const btn2 = $(".gl2");
   const btn3 = $(".gl3");
   const btnall = $(".glall");
+  // ============
+  var boolactive = true;
+
 
   btn1.click(function (e) {
-    tr1.show();
-    tr2.hide();
-    tr3.hide();
-    e.preventDefault();
-
+    if (boolactive) {
+      btn1.toggleClass("btn-md-primary-active");
+      tr1.show();
+      tr2.hide();
+      tr3.hide();
+      e.preventDefault();
+      boolactive = false;
+    } else {
+      btn1.toggleClass("btn-md-primary-active");
+      tr1.show();
+      tr2.show();
+      tr3.show();
+      boolactive = true;
+    }
   });
 
   btn2.click(function (e) {
-    tr2.show();
-    tr1.hide();
-    tr3.hide();
-    e.preventDefault();
-
+    if (boolactive) {
+      btn2.toggleClass("btn-md-primary-active");
+      tr2.show();
+      tr1.hide();
+      tr3.hide();
+      e.preventDefault();
+      boolactive = false;
+    } else {
+      btn2.toggleClass("btn-md-primary-active");
+      tr1.show();
+      tr2.show();
+      tr3.show();
+      boolactive = true;
+    }
   });
+
+  // btn2.click(function (e) {
+  //   tr2.show();
+  //   tr1.hide();
+  //   tr3.hide();
+  //   e.preventDefault();
+
+  // });
 
   btn3.click(function (e) {
     tr3.show();
@@ -42,6 +71,8 @@ $(document).ready(function () {
     tr1.show();
     tr2.show();
     tr3.show();
+    e.preventDefault();
+
   });
 
 
