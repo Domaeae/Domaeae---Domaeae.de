@@ -4,6 +4,7 @@ $(document).ready(function () {
   const isDarkMode =
     window.matchMedia &&
     window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var DarkModeBool;
 
   const tr1 = $('.tr-1');
   const tr2 = $('.tr-2');
@@ -90,24 +91,44 @@ $(document).ready(function () {
 
 
   // IF-Schleifen
+  $('.theme-settings').click(function (e) {
 
-  if (isDarkMode) {
-    // Enabled when Optimize
-    // enable_darkmode();
-  } else {
-    console.log('Light mode is enabled');
-  };
+    if ($(this).hasClass("light")) {
+      enable_darkmode();
+      $(this).toggleClass("light");
+      $(this).toggleClass("darks");
+      console.log('1');
+    } else {
+      enable_darkmode();
+      $(this).toggleClass("light");
+      $(this).toggleClass("darks");
+      console.log('2');
+    }
+
+
+  });
+
+
+
+
+  // if (isDarkMode) {
+  //   enable_darkmode();
+  //   localStorage.setItem('isDarkMode', true);
+  //   console.log("true");
+  // } else {
+  // };
+
 
 
   // Funktionen
 
   function enable_darkmode() {
-    $('body').addClass('dark');
-    app_body.addClass('dark-body');
+    $('body').toggleClass('dark');
+    app_body.toggleClass('dark-body');
     // Dark-Buttons verdunkeln
-    $('.btn-md-outline-dark').addClass('btn-md-primary');
+    $('.btn-md-outline-dark').toggleClass('btn-md-primary');
     $('.btn-md-outline-dark').removeClass('btn-md-outline-dark');
-    $('.btn-back').addClass('btn-md-pink').removeClass('btn-md-outline-dark');
+    $('.btn-back').toggleClass('btn-md-pink').removeClass('btn-md-outline-dark');
     // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
   }
 
