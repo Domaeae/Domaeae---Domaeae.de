@@ -13,6 +13,7 @@ $(document).ready(function () {
   const btn2 = $(".gl2");
   const btn3 = $(".gl3");
   const btnall = $(".glall");
+  const btnformularmodal = $(".btn-formular-modal");
   // ============
   var boolactive = true;
 
@@ -75,6 +76,18 @@ $(document).ready(function () {
 
   });
 
+  btnformularmodal.click(function (e) {
+    let modal = $('.formular-modal-down');
+    if (modal.hasClass('modal-hide')) {
+      modal.slideDown();
+    } else {
+      modal.addClass("modal-hide");
+      modal.hide();
+    }
+
+    e.preventDefault();
+  });
+
 
   // IF-Schleifen
 
@@ -97,4 +110,6 @@ $(document).ready(function () {
     $('.btn-back').addClass('btn-md-pink').removeClass('btn-md-outline-dark');
     // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
   }
+
+
 });
