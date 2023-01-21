@@ -1034,3 +1034,56 @@ $lg: new-breakpoint(min-width 1024px);
     }
   }
 }
+
+.theme-selector {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  width: 160px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+  .btn-md {
+    width: 160px;
+  }
+
+  .theme-button {
+    display: block;
+
+    &.animation {
+      animation: theme_selector_span 0.35s ease-in 0s 1 reverse none;
+      transform: translate(0%, 0%);
+    }
+
+    &.animatied {
+      animation: theme_selector_span 0.55s ease-in 0s 1 normal none;
+      transform: translate(0%, -100%);
+    }
+    &.animatiedrev {
+      animation: theme_selector_span 0.55s ease-in 0s 1 reverse none;
+      transform: translate(0%, -100%);
+    }
+  }
+}
+
+@keyframes theme_selector_span {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  75% {
+    transform: translate(0%, -125%);
+  }
+  100% {
+    transform: translate(0%, -100%);
+  }
+}
+
+@keyframes theme_selector_span_end {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}

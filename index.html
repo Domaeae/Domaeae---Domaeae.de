@@ -1,211 +1,151 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Primary Meta Tags -->
-  <title>Domaeae - Hi!</title>
-  <meta name="title" content="Domaeae - Hi!">
-  <meta name="description"
-        content="Ich bin Domaeae. Auf dieser Webseite findest du HTML-Projekte, die du herunterladen und für deine Projekte verwenden darfst!">
-  <meta name="keywords"
-        content="Domaeae, Webprojekte, Kostenlos, Download, Webseite, Portfolio, Webentwicklung, Webdesign, Webprojektmanagement, Freelancer, Webprojektleiter, Webprojektmanger">
-  <meta name="author" content="Domaeae">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Primary Meta Tags -->
+    <title>Domaeae - Hi!</title>
+    <meta name="title" content="Domaeae - Hi!">
+    <meta name="description"
+          content="Ich bin Domaeae. Auf dieser Webseite findest du HTML-Projekte, die du herunterladen und für deine Projekte verwenden darfst!">
+    <meta name="keywords"
+          content="Domaeae, Webprojekte, Kostenlos, Download, Webseite, Portfolio, Webentwicklung, Webdesign, Webprojektmanagement, Freelancer, Webprojektleiter, Webprojektmanger">
+    <meta name="author" content="Domaeae">
 
-  <!-- --= Google Tag-Manager  -->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149580594-3"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- --= Google Tag-Manager  -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149580594-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'UA-149580594-3');
-  </script>
+        gtag('config', 'UA-149580594-3');
+    </script>
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="./src/css/master.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&family=Ubuntu&display=swap"
-        rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./src/css/master.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto:wght@300;400;500&family=Ubuntu&display=swap"
+          rel="stylesheet">
 
-  <!-- META| Favicons, ThemeColor,.. -->
-  <!-- <title>Domaeae.de|Domaeae.dev | private Entwicklungsseite</title> -->
-  <link rel="shortcut icon" href="./favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
-  <!-- <link rel="manifest" href="/manifest.json"> -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- META| Favicons, ThemeColor,.. -->
+    <!-- <title>Domaeae.de|Domaeae.dev | private Entwicklungsseite</title> -->
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <meta name="msapplication-TileColor" content="#3949ab">
-  <meta name="theme-color" content="#3949ab">
+    <meta name="msapplication-TileColor" content="#3949ab">
+    <meta name="theme-color" content="#3949ab">
 
-  <!-- PWA | Serviceworker-->
-  <!-- <script>navigator.serviceWorker.register("src/sw.js")</script> -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+    <!-- PWA | Serviceworker-->
+    <!-- <script>navigator.serviceWorker.register("src/sw.js")</script> -->
+    <style>
+        /* Fader CSS */
+        #fader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+            pointer-events: none;
+            background: white;
+            /* animation-duration: 1000ms; */
+            animation-duration: 300ms;
+            animation-timing-function: ease-in-out;
+        }
 
-    /* Fader CSS */
-    #fader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 999999;
-      pointer-events: none;
-      background: white;
-      animation-duration: 300ms;
-      animation-timing-function: ease-in-out;
-    }
+        @keyframes fade-out {
+            from {
+                opacity: 1
+            }
 
-    @keyframes fade-out {
-      from {
-        opacity: 1
-      }
+            to {
+                opacity: 0
+            }
+        }
 
-      to {
-        opacity: 0
-      }
-    }
+        @keyframes fade-in {
+            from {
+                opacity: 0
+            }
 
-    @keyframes fade-in {
-      from {
-        opacity: 0
-      }
+            to {
+                opacity: 1
+            }
+        }
 
-      to {
-        opacity: 1
-      }
-    }
+        @keyframes fadeOUT {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
 
-    #fader.fade-out {
+            to {
+                opacity: 0;
+                transform: scale(1.3) skew(-20deg, -25deg);
+            }
+        }
+
+        #fader.fade-out {
+            opacity: 0;
+            animation-name: fadeOUT;
+        }
+
+        /* #fader.fade-out {
       opacity: 0;
       animation-name: fade-out;
-    }
+    } */
 
-    #fader.fade-in {
-      opacity: 1;
-      animation-name: fade-in;
-    }
+        #fader.fade-in {
+            opacity: 1;
+            animation-name: fade-in;
+        }
 
-  </style>
+    </style>
 </head>
 
 <body>
 
-  <svg id="fader"></svg>
+    <svg id="fader"></svg>
 
-
-  <div class="appbar-heading-divider-top-1591268644 appbar-svg">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 120" preserveaspectratio="none">
-      <path d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-            opacity=".25" class="shape-fill"></path>
-      <path d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-            opacity=".5" class="shape-fill"></path>
-      <path d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
-            class="shape-fill"></path>
-    </svg>
-  </div>
-
-
-  <nav class="app-navbar" style="z-index: 9898 !important;">
-    <a href="#home" class="app-header--branding">
-      <img src="./src/images/logo/favicon_144.png" alt="logo" class="nav-logo" width='24' height='23'>
-    </a>
-  </nav>
-
-  <div class="app">
-    <header class="app-header">
-      <a href="#" class="app-header--branding" style="z-index: 99;" alt="logo">
-        <img src="./src/images/logo/domaeae-wide-white.png" alt="logo" style="z-index: 999;">
-      </a>
+    <header>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#212121" fill-opacity="1"
+                  d="M0,96L34.3,106.7C68.6,117,137,139,206,133.3C274.3,128,343,96,411,85.3C480,75,549,85,617,74.7C685.7,64,754,32,823,26.7C891.4,21,960,43,1029,48C1097.1,53,1166,43,1234,64C1302.9,85,1371,139,1406,165.3L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+            <path fill="#212121" fill-opacity="0.75"
+                  d="M0,192L34.3,186.7C68.6,181,137,171,206,165.3C274.3,160,343,160,411,149.3C480,139,549,117,617,106.7C685.7,96,754,96,823,112C891.4,128,960,160,1029,186.7C1097.1,213,1166,235,1234,218.7C1302.9,203,1371,149,1406,122.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+            <path fill="#212121" fill-opacity="0.25"
+                  d="M0,32L34.3,64C68.6,96,137,160,206,192C274.3,224,343,224,411,197.3C480,171,549,117,617,128C685.7,139,754,213,823,250.7C891.4,288,960,288,1029,272C1097.1,256,1166,224,1234,208C1302.9,192,1371,192,1406,192L1440,192L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+        </svg> -->
+        <!-- <img src="./src/images/header.svg" class="svg-header" alt="header"> -->
+        <h2>Domaeae</h2>
+        <img src="./src/images/header.svg" class="svg-header" alt="header">
     </header>
 
-    <main class="app-body">
-      <!-- <h2 class="text-animation-underline">Neues & Aktuelles</h2> -->
-      <h1 class="app-body--heading">&nbsp; <i class=' bx-fw bx bx-planet bx-md'></i> Das Bin Ich. &nbsp;</h1>
 
+    <script src="./src/js/jquery3.6.3.min.js"></script>
+    <script src="./src/js/index.js"></script>
+    <script>
+        fadeInPage();
 
-      <div class="app__content-wp adjust-text">
-
-
-        <!-- <p class="tb">Hi, <br> ich bin Domaeae.</p> -->
-        <!-- <p class="tb">alle Projekte sind open source und wurden auf Github vorher veröffentlich. Schaue dich ruhig um! -->
-        <p class="tb" style="word-wrap: break-word; width: 90%; margin: 35px auto 0 auto;">Hi, mein Name ist Domaeae
-          <br> und ich
-          bin 22 Jahre
-          alt. <br><br>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro earum ratione officia nostrum distinctio ea
-          doloremque velit tenetur neque? Laboriosam sed sunt eligendi libero neque pariatur. Officia esse, neque
-          pariatur, nemo sed debitis, consequatur inventore ipsum exercitationem nam ea quisquam? Quos quo, vero
-          aspernatur quas aut consectetur veritatis sunt reiciendis.
-        </p>
-
-
-        <div class="link-group" style="width: 50vw; margin: 100px auto 75px auto">
-          <div class="link-group-center" style="text-align: center; ">
-
-            <a href="https://www.youtube.com/channel/UC2Tul7pYB0R3qX7vwAxW8wQ" target="_blank"
-               class="btn-md btn-md-outline-red"><i class='bx-fw bx bxl-youtube'></i> Youtube
-            </a>
-
-            <!-- <a href="./404.html" class="btn-md btn-md-outline-dark" style="font-family: 'Roboto' !important;"><i
-                 class='bx-fw bx bx-book-alt'></i> Meine
-              Projekte</a> -->
-            <a href="./projects.html" class="btn-md btn-md-outline-dark" style="font-family: 'Roboto' !important;"><i
-                 class='bx-fw bx bxs-folder-open'></i> Meine
-              Projekte</a>
-
-
-            <a href="./kontakt.html" class="btn-md btn-md-dark" id="btn-contact">
-              <i class='bx-fw bx bx-comment'></i> Kontakt</a>
-
-
-          </div>
-        </div>
-        <!--  
-        <div class="text-center" style="padding: 200px 0 50px 0;">
-          <a href="#!" class="btn btn-outline-dark btn-M" id="btn-getback"> <i class="bx-fw bx bx-arrow-back"></i>
-            Zurück&nbsp;</a>
-        </div> -->
-
-
-      </div>
-
-
-
-    </main>
-
-
-    <footer class="app-footer">Copyright © | by Domaeae</footer>
-
-
-    <!-- Change Theme Light/Dark -->
-    <div class="theme-settings light">
-      <a href="#" class="btn-theme btn-theme-dark"> <i class='bx bx-sun'></i></a>
-      <a href="#" class="btn-theme btn-theme-light" style="display: none;"><i class='bx bx-sun'></i></a>
-    </div>
-
-  </div>
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script> -->
-  <script src="./src/js/jquery3.6.3.min.js"></script>
-  <script>
-    fadeInPage();
-
-    function fadeInPage() {
-      if (!window.AnimationEvent) { return; }
-      var fader = document.getElementById('fader');
-      fader.classList.add('fade-out');
-    }
-  </script>
-  <script src="./src/js/app.min.js" async></script>
-
-
+        function fadeInPage() {
+            if (!window.AnimationEvent) { return; }
+            var fader = document.getElementById('fader');
+            fader.classList.add('fade-out');
+        }
+    </script>
+    <!-- <script src="./src/js/app.min.js" async></script> -->
 </body>
 
 </html>

@@ -3,17 +3,22 @@
 	<url>
 		<loc>https://www.domaeae.dev</loc>
 		<priority>1.00</priority>
-		<lastmod>2023-01-09</lastmod>
+		<lastmod>2023-01-21</lastmod>
+	</url>
+	<url>
+		<loc>https://www.domaeae.dev/home.html</loc>
+		<priority>1.00</priority>
+		<lastmod>2023-01-21</lastmod>
 	</url>
 	<url>
 		<loc>https://www.domaeae.dev/404.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2022-12-31</lastmod>
+		<lastmod>2023-01-10</lastmod>
 	</url>
 	<url>
 		<loc>https://www.domaeae.dev/kontakt.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-01-09</lastmod>
+		<lastmod>2023-01-20</lastmod>
 	</url>
 	<url>
 		<loc>https://www.domaeae.dev/offline.html</loc>
@@ -23,11 +28,11 @@
 	<url>
 		<loc>https://www.domaeae.dev/projects.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2023-01-09</lastmod>
+		<lastmod>2023-01-20</lastmod>
 	</url>
 	<url>
 		<loc>https://www.domaeae.dev/site.html</loc>
 		<priority>0.50</priority>
-		<lastmod>2022-07-09</lastmod>
+		<lastmod>2023-01-10</lastmod>
 	</url>
 </urlset>

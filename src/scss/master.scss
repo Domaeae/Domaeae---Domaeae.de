@@ -28,6 +28,20 @@ html {
   }
 
   // width: 100vw;
+  .link {
+    text-decoration: none;
+    font-family: $fontubuntu;
+    font-weight: 400;
+    color: $indigo-800;
+    transition: all 9999s !important;
+
+    &:hover {
+      color: #ffff !important;
+      text-decoration: underline;
+      background-color: #212121;
+      font-size: 2em;
+    }
+  }
 }
 
 // App-Body > Work in Progress Label

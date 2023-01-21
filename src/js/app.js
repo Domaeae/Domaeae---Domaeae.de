@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
   const app = $('.app'); // Ganze App (HTML fällt noch)
   const app_body = $('.app-body'); //innere teil
   const isDarkMode =
@@ -16,42 +18,74 @@ $(document).ready(function () {
   const btnall = $(".glall");
   const btnformularmodal = $(".btn-formular-modal");
   // ============
+  const btn_proj_1 = $("#btn-proj-1");
+  const btn_proj_2 = $("#btn-proj-2");
+  const btn_proj_3 = $("#btn-proj-3");
+  const btn_proj_4 = $("#btn-proj-4");
   var boolactive = true;
+  var proj_int = 0;
 
 
-  btn1.click(function (e) {
-    if (boolactive) {
-      btn1.toggleClass("btn-md-primary-active");
-      tr1.show();
-      tr2.hide();
-      tr3.hide();
-      e.preventDefault();
-      boolactive = false;
-    } else {
-      btn1.toggleClass("btn-md-primary-active");
-      tr1.show();
-      tr2.show();
-      tr3.show();
-      boolactive = true;
-    }
+
+  const $btndark = $('#btn-dark');
+  const $thmdark = $('.theme-selector-dark');
+  const $thmlight = $('.theme-selector-light');
+  let $themebool = true;
+
+
+
+
+
+
+  // $btndark.toggleClass('btn-md-dark');
+  $btndark.click(function (e) {
+    // if ($themebool !== true) {
+    //   $thmdark.toggleClass('animation');
+    //   $thmlight.toggleClass('animation');
+    // }
+    enable_darkmode();
+    $('.theme-button').toggleClass('animation');
+    $('.theme-button').toggleClass('animatied');
+    // $btndark.toggleClass('btn-md-dark').toggleClass('btn-md-outline-dark').removeClass('btn-md-primary');
+
+
+    e.preventDefault();
   });
 
-  btn2.click(function (e) {
-    if (boolactive) {
-      btn2.toggleClass("btn-md-primary-active");
-      tr2.show();
-      tr1.hide();
-      tr3.hide();
-      e.preventDefault();
-      boolactive = false;
-    } else {
-      btn2.toggleClass("btn-md-primary-active");
-      tr1.show();
-      tr2.show();
-      tr3.show();
-      boolactive = true;
-    }
-  });
+
+  // btn1.click(function (e) {
+  //   if (boolactive) {
+  //     btn1.toggleClass("btn-md-primary-active");
+  //     tr1.show();
+  //     tr2.hide();
+  //     tr3.hide();
+  //     e.preventDefault();
+  //     boolactive = false;
+  //   } else {
+  //     btn1.toggleClass("btn-md-primary-active");
+  //     tr1.show();
+  //     tr2.show();
+  //     tr3.show();
+  //     boolactive = true;
+  //   }
+  // });
+
+  // btn2.click(function (e) {
+  //   if (boolactive) {
+  //     btn2.toggleClass("btn-md-primary-active");
+  //     tr2.show();
+  //     tr1.hide();
+  //     tr3.hide();
+  //     e.preventDefault();
+  //     boolactive = false;
+  //   } else {
+  //     btn2.toggleClass("btn-md-primary-active");
+  //     tr1.show();
+  //     tr2.show();
+  //     tr3.show();
+  //     boolactive = true;
+  //   }
+  // });
 
   // btn2.click(function (e) {
   //   tr2.show();
@@ -61,54 +95,40 @@ $(document).ready(function () {
 
   // });
 
-  btn3.click(function (e) {
-    tr3.show();
-    tr1.hide();
-    tr2.hide();
-    e.preventDefault();
+  // btn3.click(function (e) {
+  //   tr3.show();
+  //   tr1.hide();
+  //   tr2.hide();
+  //   e.preventDefault();
 
-  });
-
-  btnall.click(function (e) {
-    tr1.show();
-    tr2.show();
-    tr3.show();
-    e.preventDefault();
-
-  });
-
-  btnformularmodal.click(function (e) {
-    let modal = $('.formular-modal-down');
-    if (modal.hasClass('modal-hide')) {
-      modal.slideDown();
-    } else {
-      modal.addClass("modal-hide");
-      modal.hide();
-    }
-
-    e.preventDefault();
-  });
+  // });
 
 
   // IF-Schleifen
-  $('.theme-settings').click(function (e) {
+  // let lsDarkmode = localStorage.getItem("darkmode");
 
-    if ($(this).hasClass("light")) {
+  // if (lsDarkmode == null) {
+  //   localStorage.setItem("darkmode", false);
+  //   enable_darkmode();
+  // } else {
+  //   enable_darkmode();
+  // }
+
+
+
+  function check_darkmode() {
+
+    if (lsDarkmode === "true") {
+      // enable_darkmode();
       enable_darkmode();
-      $(this).toggleClass("light");
-      $(this).toggleClass("darks");
-      console.log('1');
+      console.log("saved darkmode");
+      console.log(lsDarkmode);
     } else {
-      enable_darkmode();
-      $(this).toggleClass("light");
-      $(this).toggleClass("darks");
-      console.log('2');
+      localStorage.setItem("darkmode", false);
+      console.log(lsDarkmode);
     }
 
-
-  });
-
-
+  }
 
 
   // if (isDarkMode) {
@@ -131,6 +151,8 @@ $(document).ready(function () {
     $('.btn-back').toggleClass('btn-md-pink').removeClass('btn-md-outline-dark');
     // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
   }
+
+  check_darkmode();
 
 
 });
