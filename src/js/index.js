@@ -12,10 +12,7 @@ $(document).ready(function () {
 
         if (currentPosition > 70) {
 
-            $('header h2').css({
-                position: "fixed",
-                color: "black"
-            });
+
 
         };
 

@@ -116,19 +116,19 @@ $(document).ready(function () {
 
 
 
-  function check_darkmode() {
+  // function check_darkmode() {
 
-    if (lsDarkmode === "true") {
-      // enable_darkmode();
-      enable_darkmode();
-      console.log("saved darkmode");
-      console.log(lsDarkmode);
-    } else {
-      localStorage.setItem("darkmode", false);
-      console.log(lsDarkmode);
-    }
+  //   if (lsDarkmode === "true") {
+  //     // enable_darkmode();
+  //     enable_darkmode();
+  //     console.log("saved darkmode");
+  //     console.log(lsDarkmode);
+  //   } else {
+  //     localStorage.setItem("darkmode", false);
+  //     console.log(lsDarkmode);
+  //   }
 
-  }
+  // }
 
 
   // if (isDarkMode) {
@@ -142,17 +142,17 @@ $(document).ready(function () {
 
   // Funktionen
 
-  function enable_darkmode() {
-    $('body').toggleClass('dark');
-    app_body.toggleClass('dark-body');
-    // Dark-Buttons verdunkeln
-    $('.btn-md-outline-dark').toggleClass('btn-md-primary');
-    $('.btn-md-outline-dark').removeClass('btn-md-outline-dark');
-    $('.btn-back').toggleClass('btn-md-pink').removeClass('btn-md-outline-dark');
-    // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
-  }
+  // function enable_darkmode() {
+  //   $('body').toggleClass('dark');
+  //   app_body.toggleClass('dark-body');
+  //   // Dark-Buttons verdunkeln
+  //   $('.btn-md-outline-dark').toggleClass('btn-md-primary');
+  //   $('.btn-md-outline-dark').removeClass('btn-md-outline-dark');
+  //   $('.btn-back').toggleClass('btn-md-pink').removeClass('btn-md-outline-dark');
+  //   // $('.btn-d-outline-dark').removeClass('btn-md-outline-dark');
+  // }
 
-  check_darkmode();
+  // check_darkmode();
 
 
 });
